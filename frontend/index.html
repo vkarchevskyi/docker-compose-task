@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Docker compose task</title>
+</head>
+<body>
+<div>
+    <button id="sendRequest">Send request</button>
+</div>
+<div id="placeholder" style="margin-top: 1rem">Place for future content</div>
+
+<script>
+    document.querySelector('#sendRequest').addEventListener('click', () => {
+        fetch('http://127.0.0.1:80')
+            .then(r => r.text())
+            .then(text => document.querySelector('#placeholder').innerText = text)
+            .catch(e => document.querySelector('#placeholder').innerText = e);
+    });
+</script>
+</body>
+</html>
