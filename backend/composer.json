@@ -1,0 +1,22 @@
+{
+  "name": "vkarchevskyi/docker-compose-task",
+  "description": "Docker compose task",
+  "type": "project",
+  "require": {
+    "php": ">=8.4",
+    "ext-pdo": "*",
+    "ext-pdo_pgsql": "*",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vkarchevskyi\\DockerComposeTask\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "vkarchevskyi",
+      "email": "vkarchevskyi10@gmail.com"
+    }
+  ]
+}
